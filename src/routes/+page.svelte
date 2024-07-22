@@ -187,7 +187,7 @@
         <p class="fine-verdict">{fine.fver}</p>
     {/each}
 
-    <p>Yhteensä maksamatta {ttotal}€</p>
+    <p>Yhteensä maksamatta: {ttotal}€</p>
     <button class="addbtn" on:click={addThreatFine}>Lisää uhkasakko</button>
 
 

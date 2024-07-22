@@ -161,7 +161,7 @@
     {#each threatFines as fine, index}
         <div class="fine-entry">
             <div class="fine-column">
-                <label for="days">Uhkasakon euromäärä (esim. 600€):</label>
+                <label for="days">Uhkasakon euromäärä (esim. 600 €):</label>
                 <input
                     type="number"
                     bind:value={fine.quantity}
@@ -187,7 +187,7 @@
         <p class="fine-verdict">{fine.fver}</p>
     {/each}
 
-    <p>Yhteensä maksamatta: {ttotal}€</p>
+    <p>Yhteensä maksamatta: {ttotal} €</p>
     <button class="addbtn" on:click={addThreatFine}>Lisää uhkasakko</button>
 
 

@@ -44,6 +44,10 @@
             let numb = unpaidqty ? unpaidqty : 0;
             fine.unpaid = numb;
             fine.fver = "Maksamattomia sakkoja: " + numb + " kpl";
+
+            if (unpaidqty < 16) {
+                fine.fver = fine.fver + " (ei huomioida)";
+            }
         });
 
         let newDays = dayFines.filter((fine) => fine.unpaid >= 16);
@@ -73,6 +77,10 @@
 
             fine.fver = "Sakkoa maksamatta: " + unpaid + " €";
 
+            if (unpaid < 120) {
+                unpaid = 0;
+                fine.fver = fine.fver + " (ei huomioida)";
+            }
             tsum += unpaid;
         });
         ttotal = tsum;

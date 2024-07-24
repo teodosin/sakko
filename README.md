@@ -1,1 +1,1 @@
-Sakonmuuntolaskuri
+Sakonmuuntolaskuri.
